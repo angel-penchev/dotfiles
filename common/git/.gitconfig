@@ -1,0 +1,12 @@
+[core]
+	autocrlf = false
+	editor = code --wait
+[credential]
+	helper = cache --timeout 15811200
+[user]
+	name = Angel Penchev
+	email = 26301867+angel-penchev@users.noreply.github.com
+[init]
+	defaultBranch = main
+[github]
+	user = angel-penchev
