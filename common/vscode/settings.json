@@ -108,4 +108,11 @@
     },
     "dart.flutterSdkPath": "/usr/local/opt/flutter",
     "window.zoomLevel": 1,
+    "eslint.nodePath": "/Users/tsb/.nvm/versions/node/v14.16.1/lib/node_modules/",
+    "eslint.options": {
+        "configFile": "/Users/tsb/.eslintrc.json"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }

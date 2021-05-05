@@ -39,3 +39,17 @@ brew uninstall --force node
 mkdir ~/.nvm
 nvm install --lts
 nvm use --lts
+
+# Update npm
+npm install -g npm
+
+
+#*eslint
+# Install eslint
+npm i -g eslint
+(cd "$HOME" ; npm i eslint-plugin-react @typescript-eslint/eslint-plugin eslint-config-google @typescript-eslint/parser)
+chflags hidden "$HOME/node_modules"
+rm "$HOME/package*"
+
+# Configure eslint
+ln -sf "$(pwd)/common/eslint/.eslintrc.json" "$HOME/.eslintrc.json"
