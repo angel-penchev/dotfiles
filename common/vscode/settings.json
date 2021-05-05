@@ -1,0 +1,111 @@
+{
+    "telemetry.enableTelemetry": false,
+    "nxConsole.enableTelemetry": false,
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--enable=F,E,W"
+    ],
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "explorer.confirmDelete": false,
+    "settingsSync.ignoredSettings": [],
+    "settingsSync.ignoredExtensions": [],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "cSpell.userWords": [
+        "Losho",
+        "Mosho",
+        "Oshte",
+        "Penchev",
+        "Postgres",
+        "RABBITMQ",
+        "TIMESTAMPTZ",
+        "VARCHAR",
+        "arange",
+        "camelcase",
+        "conv",
+        "dartz",
+        "deque",
+        "drun",
+        "dtype",
+        "ehrer",
+        "gosho",
+        "jsonify",
+        "keras",
+        "messagebird",
+        "mockito",
+        "mutex",
+        "ndarray",
+        "numpy",
+        "posho",
+        "prefetch",
+        "relu",
+        "respawn",
+        "slonik",
+        "sqlite",
+        "twilio",
+        "typeorm",
+        "usecase",
+        "usecases",
+        "uuidv",
+        "wordlist",
+        "wordlists"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.textOutputLimit": 50000,
+    "jupyter.askForKernelRestart": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "[Material Theme Darker]": {
+          "statusBar.debuggingBackground": "#212121"
+        }
+    },
+    "material-icon-theme.folders.associations": {
+        "global_state": "global",
+        "ui": "layout",
+        "bloc": "controller",
+        "features": "app",
+        "presentation": "layout",
+        "domain": "rules",
+        "entities": "class"
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "dart.previewFlutterUiGuides": true,
+    "files.eol": "\n",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "javascript.format.semicolons": "insert",
+    "cSpell.enableFiletypes": [
+        "dart"
+    ],
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "terminal.explorerKind": "external",
+    "codestream.email": "angel.penchev.tsb@gmail.com",
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\tf2-gpu\\python.exe",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "dart.flutterSdkPath": "/usr/local/opt/flutter",
+    "window.zoomLevel": 1,
+}
