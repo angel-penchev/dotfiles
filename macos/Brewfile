@@ -2,42 +2,79 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+# Dependency manager for Cocoa projects
 brew "cocoapods", link: false
+# Configurable talking characters in ASCII art
 brew "cowsay"
+# Pack, ship and run any application as a lightweight container
 brew "docker"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Core application library for C
 brew "glib"
+# Improved top (interactive process viewer)
 brew "htop"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Rainbows and unicorns in your console!
 brew "lolcat"
+# Fast, highly customisable system info script
 brew "neofetch"
-brew "node"
+# Read-write NTFS driver for FUSE
 brew "ntfs-3g"
+# Manage multiple Node.js versions
+brew "nvm"
+# Prints a steam locomotive if you type sl instead of ls
 brew "sl"
+# Download YouTube videos from the command-line
 brew "youtube-dl"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Distribution of the Python and R programming languages for scientific computing
 cask "anaconda"
+# Tools for building Android applications
 cask "android-studio"
+# Two-factor authentication software
 cask "authy"
+# Web browser focusing on privacy
 cask "brave-browser"
+# Voice and text chat software
 cask "discord"
+# Web browser
+cask "firefox"
+# UI toolkit for building applications for mobile, web and desktop
 cask "flutter"
 cask "font-fira-code"
 cask "font-fira-mono"
 cask "font-fira-mono-for-powerline"
 cask "font-fira-mono-nerd-font"
 cask "font-fira-sans"
+# Open-source video transcoder
+cask "handbrake"
+# Java IDE by JetBrains
 cask "intellij-idea"
+# Password manager
 cask "lastpass"
+# File system integration
 cask "macfuse"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 cask "microsoft-office"
+# Open-source software for live streaming and screen recording
 cask "obs"
+# Finds large, unwanted files and deletes them
 cask "omnidisksweeper"
+# Peer to peer Bitorrent client
 cask "qbittorrent"
+# Music streaming service
 cask "spotify"
+# Messaging app with a focus on speed and security
 cask "telegram"
+# SSH client
 cask "termius"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
