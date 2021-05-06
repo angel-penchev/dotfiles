@@ -19,6 +19,7 @@ git clone --depth=1 "https://github.com/romkatv/powerlevel10k.git" ${ZSH_CUSTOM:
 # Configure zsh
 #!/bin/zsh
 ln -sf "$(pwd)/common/zsh/.zshrc" "$HOME/.zshrc"
+ln -sf "$(pwd)/common/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
 source "$HOME/.zshrc"
 
 # Change default shell to zsh
