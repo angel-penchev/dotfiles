@@ -18,7 +18,7 @@
     "python.linting.pylintArgs": [
         "--enable=F,E,W"
     ],
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font",
     "explorer.confirmDelete": false,
     "settingsSync.ignoredSettings": [],
     "settingsSync.ignoredExtensions": [],
