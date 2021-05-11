@@ -57,3 +57,21 @@ rm "$HOME/package*"
 
 # Configure eslint
 ln -sf "$(pwd)/common/eslint/.eslintrc.json" "$HOME/.eslintrc.json"
+
+
+#*java
+# Configure jenv with maven
+jenv enable-plugin export
+jenv enable-plugin maven
+jenv global 14
+
+# Register adoptopenjdk{8, 11, 14}
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home/
+
+
+#*flutter
+# Accept Android licenses
+jenv local 1.8
+flutter doctor --android-licenses

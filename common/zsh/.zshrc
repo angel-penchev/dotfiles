@@ -121,5 +121,12 @@ unset __conda_setup
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# jenv setup
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)";
+
+# flutter setup
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
 # Neofetch
 neofetch | lolcat
