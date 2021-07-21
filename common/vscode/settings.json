@@ -1,8 +1,24 @@
 {
     "telemetry.enableTelemetry": false,
     "nxConsole.enableTelemetry": false,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "[dart]": {
+    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
+    "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast",
+    "material-icon-theme.folders.associations": {
+        "global_state": "global",
+        "ui": "layout",
+        "bloc": "controller",
+        "features": "app",
+        "presentation": "layout",
+        "domain": "rules",
+        "entities": "class"
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "[*]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "editor.rulers": [
@@ -14,19 +30,24 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
+    "dart.previewFlutterUiGuides": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintArgs": [
         "--enable=F,E,W"
     ],
-    "terminal.integrated.fontFamily": "FiraMono Nerd Font",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "settingsSync.ignoredSettings": [],
     "settingsSync.ignoredExtensions": [],
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
+    "editor.suggestSelection": "first",
+    "files.eol": "\n",
     "cSpell.userWords": [
+        "Linkedin",
         "Losho",
+        "MAILGUN",
         "Mosho",
         "Oshte",
         "Penchev",
@@ -63,56 +84,5 @@
         "uuidv",
         "wordlist",
         "wordlists"
-    ],
-    "explorer.confirmDragAndDrop": false,
-    "jupyter.textOutputLimit": 50000,
-    "jupyter.askForKernelRestart": false,
-    "vsicons.dontShowNewVersionMessage": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorCustomizations": {
-        "[Material Theme Darker]": {
-          "statusBar.debuggingBackground": "#212121"
-        }
-    },
-    "material-icon-theme.folders.associations": {
-        "global_state": "global",
-        "ui": "layout",
-        "bloc": "controller",
-        "features": "app",
-        "presentation": "layout",
-        "domain": "rules",
-        "entities": "class"
-    },
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "dart.previewFlutterUiGuides": true,
-    "files.eol": "\n",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.languageServer": "Pylance",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "javascript.format.semicolons": "insert",
-    "cSpell.enableFiletypes": [
-        "dart"
-    ],
-    "dart.debugExternalLibraries": false,
-    "dart.debugSdkLibraries": false,
-    "terminal.explorerKind": "external",
-    "codestream.email": "angel.penchev.tsb@gmail.com",
-    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\tf2-gpu\\python.exe",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "dart.flutterSdkPath": "/usr/local/opt/flutter",
-    "window.zoomLevel": 1,
-    "eslint.nodePath": "/Users/tsb/.nvm/versions/node/v14.16.1/lib/node_modules/",
-    "eslint.options": {
-        "configFile": "/Users/tsb/.eslintrc.json"
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+    ]
 }
