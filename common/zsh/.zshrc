@@ -119,7 +119,11 @@ unset __conda_setup
 
 # nvm setup
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  source /usr/share/nvm/init-nvm.sh
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  source $(brew --prefix nvm)/nvm.sh
+fi
 
 # jenv setup
 export PATH="$HOME/.jenv/bin:$PATH"
