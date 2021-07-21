@@ -1,6 +1,7 @@
 [core]
 	autocrlf = false
 	editor = code --wait
+	editor = vim
 [credential]
 	helper = cache --timeout 15811200
 [user]
