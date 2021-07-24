@@ -44,6 +44,9 @@
     "settingsSync.ignoredExtensions": [],
     "editor.suggestSelection": "first",
     "files.eol": "\n",
+    "vscode-neovim.neovimExecutablePaths.win32": "C:/tools/neovim/Neovim/bin/nvim.exe",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "cSpell.userWords": [
         "Linkedin",
         "Losho",
