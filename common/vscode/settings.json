@@ -1,9 +1,9 @@
 {
     "telemetry.enableTelemetry": false,
     "nxConsole.enableTelemetry": false,
-    "workbench.colorTheme": "Material Theme Lighter High Contrast",
     "workbench.iconTheme": "material-icon-theme",
     "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
     "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast",
     "material-icon-theme.folders.associations": {
@@ -45,8 +45,8 @@
     "editor.suggestSelection": "first",
     "files.eol": "\n",
     "vscode-neovim.neovimExecutablePaths.win32": "C:/tools/neovim/Neovim/bin/nvim.exe",
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/bin/nvim",
     "cSpell.userWords": [
         "Linkedin",
         "Losho",
@@ -87,5 +87,34 @@
         "uuidv",
         "wordlist",
         "wordlists"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#AF1C38",
+        "activityBar.activeBorder": "#AF1C38",
+        "list.activeSelectionForeground": "#AF1C38",
+        "list.inactiveSelectionForeground": "#AF1C38",
+        "list.highlightForeground": "#AF1C38",
+        "scrollbarSlider.activeBackground": "#AF1C3850",
+        "editorSuggestWidget.highlightForeground": "#AF1C38",
+        "textLink.foreground": "#AF1C38",
+        "progressBar.background": "#AF1C38",
+        "pickerGroup.foreground": "#AF1C38",
+        "tab.activeBorder": "#AF1C38",
+        "notificationLink.foreground": "#AF1C38",
+        "editorWidget.resizeBorder": "#AF1C38",
+        "editorWidget.border": "#AF1C38",
+        "settings.modifiedItemIndicator": "#AF1C38",
+        "settings.headerForeground": "#AF1C38",
+        "panelTitle.activeBorder": "#AF1C38",
+        "breadcrumb.activeSelectionForeground": "#AF1C38",
+        "menu.selectionForeground": "#AF1C38",
+        "menubar.selectionForeground": "#AF1C38",
+        "editor.findMatchBorder": "#AF1C38",
+        "selection.background": "#AF1C3840",
+        "statusBarItem.remoteBackground": "#AF1C38"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "window.zoomLevel": 1
 }
