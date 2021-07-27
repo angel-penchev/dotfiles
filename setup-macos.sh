@@ -28,10 +28,9 @@ chsh -s /bin/zsh
 
 #*vscode
 # Configure vscode
-code
 ln -sf "$(pwd)/common/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 ln -sf "$(pwd)/common/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
-ln -sfF "$(pwd)/common/vscode/snippets" "$HOME/Library/Application Support/Code/User"
+ln -sfF "$(pwd)/common/vscode/snippets" "$HOME/Library/Application Support/Code/User/snippets"
 
 
 #*nvm
@@ -48,22 +47,11 @@ nvm use --lts
 npm install -g npm
 
 
-#*eslint
-# Install eslint
-npm i -g eslint
-(cd "$HOME" ; npm i eslint-plugin-react @typescript-eslint/eslint-plugin eslint-config-google @typescript-eslint/parser)
-chflags hidden "$HOME/node_modules"
-rm "$HOME/package*"
-
-# Configure eslint
-ln -sf "$(pwd)/common/eslint/.eslintrc.json" "$HOME/.eslintrc.json"
-
-
 #*java
 # Configure jenv with maven
 jenv enable-plugin export
 jenv enable-plugin maven
-jenv global 14
+jenv global 1.8
 
 # Register adoptopenjdk{8, 11, 14}
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
@@ -72,6 +60,5 @@ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home/
 
 
 #*flutter
-# Accept Android licenses
-jenv local 1.8
+# Accept android licenses
 flutter doctor --android-licenses
