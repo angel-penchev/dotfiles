@@ -82,40 +82,41 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else
   export EDITOR='code'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# open alias on linux
+if [[ $(uname -s) == Linux* ]]; then
+  alias open="xdg-open"
+fi
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+# zsh config aliases
+alias zshconfig="open ~/.zshrc"
+alias ohmyzsh="open ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# conda setup
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  ANACONDA_PATH='/opt/anaconda'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  ANACONDA_PATH='/usr/local/anaconda3'
+fi
+
+__conda_setup="$('$ANACONDA_PATH/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
+  eval "$__conda_setup"
 else
-    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+  if [ -f "$ANACONDA_PATH/etc/profile.d/conda.sh" ]; then
+      . "$ANACONDA_PATH/etc/profile.d/conda.sh"
     else
-        export PATH="/usr/local/anaconda3/bin:$PATH"
+      export PATH="$ANACONDA_PATH/bin:$PATH"
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
 
 # nvm setup
 export NVM_DIR=~/.nvm
@@ -130,7 +131,11 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)";
 
 # flutter setup
-export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  export CHROME_EXECUTABLE="/usr/bin/brave"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+fi
 
-# Neofetch
+# neofetch
 neofetch | lolcat
