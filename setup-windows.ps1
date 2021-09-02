@@ -1,3 +1,7 @@
+#*git
+Remove-Item -Force -Recurse -ErrorAction SilentlyContinue "${Env:USERPROFILE}\.gitconfig"
+cmd /c mklink "${Env:USERPROFILE}\.gitconfig" "$PSScriptRoot\common\git\.gitconfig"
+
 #*wsl
 # Enable WSL
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
