@@ -3,7 +3,7 @@
     "nxConsole.enableTelemetry": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "workbench.colorTheme": "Material Theme Lighter High Contrast",
     "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
     "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast",
     "material-icon-theme.folders.associations": {
@@ -15,7 +15,7 @@
         "domain": "rules",
         "entities": "class"
     },
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "Fira Mono",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "[*]": {
@@ -46,7 +46,7 @@
     "files.eol": "\n",
     "vscode-neovim.neovimExecutablePaths.win32": "C:/tools/neovim/Neovim/bin/nvim.exe",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "cSpell.userWords": [
         "Linkedin",
         "Losho",
@@ -116,5 +116,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": 1
+    "redhat.telemetry.enabled": false,
+    "latex-workshop.view.pdf.viewer": "tab"
 }
