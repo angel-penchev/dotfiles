@@ -56,13 +56,13 @@ flutter doctor --android-license
 
 
 #*spicetify
-# Copy themes and extensions
-ln -sfF "$(pwd)/common/spicetify/Themes" "$HOME/.config/spicetify/Themes"
-ln -sfF "$(pwd)/common/spicetify/Extensions" "$HOME/.config/spicetify/Extensions"
-
 # Initialize and backup theme
 spicetify
 spicetify backup apply enable-devtool
+
+# Copy themes and extensions
+ln -sfF "$(pwd)/common/spicetify/Themes" "$HOME/.config/spicetify/Themes"
+ln -sfF "$(pwd)/common/spicetify/Extensions" "$HOME/.config/spicetify/Extensions"
 
 # Update spotify theme
 spicetify restore

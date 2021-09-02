@@ -62,3 +62,22 @@ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home/
 #*flutter
 # Accept android licenses
 flutter doctor --android-licenses
+
+
+#*spicetify
+# Initialize and backup theme
+spicetify
+spicetify backup apply enable-devtool
+
+# Copy themes and extensions
+rm -r "$HOME/spicetify_data/Themes"
+rm -r "$HOME/spicetify_data/Extensions"
+ln -sfF "$(pwd)/common/spicetify/Themes" "$HOME/spicetify_data/Themes"
+ln -sfF "$(pwd)/common/spicetify/Extensions" "$HOME/spicetify_data/Extensions"
+
+# Update spotify theme
+spicetify restore
+spicetify config extensions dribbblish.js
+spicetify config current_theme dribbblish
+spicetify config color_scheme red-ocean
+spicetify apply
