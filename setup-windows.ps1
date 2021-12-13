@@ -22,3 +22,7 @@ cmd /c mklink "${Env:USERPROFILE}\AppData\Roaming\Code\User\settings.json" "$PSS
 cmd /c mklink "${Env:USERPROFILE}\AppData\Roaming\Code\User\keybindings.json" "$PSScriptRoot\common\vscode\keybindings.json"
 cmd /c mklink /j "${Env:USERPROFILE}\AppData\Roaming\Code\User\snippets" "$PSScriptRoot\common\vscode\snippets"
 & "$PSScriptRoot\common\vscode\extensions.ps1"
+
+#*csgo
+Remove-Item -Force "${Env:ProgramFiles(x86)}\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\tsb.cfg"
+cmd /c mklink "${Env:ProgramFiles(x86)}\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\tsb.cfg" "$PSScriptRoot\common\csgo\cfg\tsb.cfg"
