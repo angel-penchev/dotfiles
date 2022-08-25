@@ -3,9 +3,9 @@
     "nxConsole.enableTelemetry": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
     "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
-    "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast",
+    "workbench.preferredDarkColorTheme": "Community Material Theme Darker High Contrast",
     "material-icon-theme.folders.associations": {
         "global_state": "global",
         "ui": "layout",
@@ -117,5 +117,22 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "redhat.telemetry.enabled": false,
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "sonarlint.rules": {
+        "typescript:S4326": {
+            "level": "off"
+        }
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "raynigon.nginx-formatter"
+    }
 }
