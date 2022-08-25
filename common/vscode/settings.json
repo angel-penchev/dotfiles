@@ -1,5 +1,5 @@
 {
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "nxConsole.enableTelemetry": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.autoDetectColorScheme": true,
@@ -15,7 +15,7 @@
         "domain": "rules",
         "entities": "class"
     },
-    "terminal.integrated.fontFamily": "Fira Mono",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono Retina",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "[*]": {
