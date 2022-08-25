@@ -3,7 +3,7 @@
     "nxConsole.enableTelemetry": false,
     "workbench.iconTheme": "material-icon-theme",
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
     "workbench.preferredDarkColorTheme": "Material Theme Ocean High Contrast",
     "material-icon-theme.folders.associations": {
